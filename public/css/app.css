@@ -101,3 +101,19 @@ header .primary-header .primary-header-wrapper .primary-header-search {
   background-position: 110% 0%;
 }
 
+.current-series {
+  position: relative;
+  background-color: #1C1C1C;
+}
+
+.current-series .current-series-title {
+  position: absolute;
+  top: -22px;
+  left: 210px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #0282F9;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
