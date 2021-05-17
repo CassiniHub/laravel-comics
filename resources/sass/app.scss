@@ -1,1 +1,109 @@
-//
+@import 'partials/variables';
+// GENERAL RULES
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 1450px;
+    margin: auto;
+}
+
+// - - - - - - - - - - - - - -
+
+// HEADER
+header {
+    .secondary-header {
+        background-color: $primary-color;
+
+        .secondary-header-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+
+            height: 30px;
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                height: 100%;
+
+                li {
+                    margin-right: 75px;
+
+                    color: $secondary-color;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .primary-header {
+        background-color: $secondary-color;
+        
+
+        .primary-header-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 120px;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                img {
+                    height: 80%;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    height: 100%;
+                    margin: 0 30px;
+                    
+                    a {
+                        color: $tertiary-color;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .primary-header-search {
+                height: 20px;
+                width: 150px;
+            }
+        }
+    }
+}
