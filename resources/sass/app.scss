@@ -468,3 +468,117 @@ footer {
         }
     }
 }
+
+//  - - - - - - - - - - - - - - - - - - - - - 
+
+// DETAILS
+.details {
+    background-color: #F6F6F6;
+    padding: 50px;
+    border-top: 1px solid lightgray;
+
+    .details-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .talent {
+            width: 50%;
+
+            h2 {
+                border-bottom: 1px solid lightgray;
+            }
+
+            .art-by {
+                display: flex;
+                flex-flow: row nowrap;
+
+                padding: 10px 0;
+
+                border-bottom: 1px solid lightgray;
+
+                .art-by-left {
+                    width: 20%;
+                }
+
+                .art-by-right {
+                    width: 80%;
+                }
+            }
+
+            .written-by {
+                display: flex;
+                flex-flow: row nowrap;
+
+                padding: 10px 0;
+
+                border-bottom: 1px solid lightgray;
+
+                .written-by-left {
+                    width: 20%;
+                }
+
+                .written-by-right {
+                    width: 80%;
+                }
+            }
+        }
+
+        .specs {
+            width: 50%;
+
+            h2 {
+                border-bottom: 1px solid lightgray;
+            }
+
+            .series {
+                display: flex;
+                flex-flow: row nowrap;
+
+                padding: 10px 0;
+                border-bottom: 1px solid lightgray;
+
+                .series-left {
+                    width: 20%;
+                }
+
+                .series-right {
+                    width: 80%;
+                }
+            }
+
+            .details-price {
+                display: flex;
+                flex-flow: row nowrap;
+
+                padding: 10px 0;
+
+                border-bottom: 1px solid lightgray;
+
+                .details-price-left {
+                    width: 20%;
+                }
+
+                .details-price-right {
+                    width: 80%;
+                }
+            }
+
+            .sale-date {
+                display: flex;
+                flex-flow: row nowrap;
+
+                padding: 10px 0;
+
+                border-bottom: 1px solid lightgray;
+                
+                .sale-date-left {
+                    width: 20%;
+                }
+
+                .sale-date-right {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

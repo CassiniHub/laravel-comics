@@ -46,4 +46,82 @@
             </div>
         </div>
     </section>
+
+    {{-- DETAILS --}}
+    <section class="details">
+        <div class="elem-container">
+            <div class="details-wrapper">
+                <div class="talent">
+                    <h2>
+                        Talent
+                    </h2>
+
+                    <div class="art-by">
+                        <div class="art-by-left">
+                            <span>
+                                Art By:
+                            </span>
+                        </div>
+                        <div class="art-by-right">
+                            @foreach ($elem['artists'] as $artist)
+                                @if ($loop->last)
+                                    {{ $artist }}
+                                @else
+                                    {{ $artist }},
+                                @endif
+                                
+                            @endforeach
+                        </div>
+                    </div>
+
+                    <div class="written-by">
+                        <div class="written-by-left">
+                            Written By:
+                        </div>
+                        <div class="written-by-right">
+                            @foreach ($elem['writers'] as $writer)
+                                @if ($loop->last)
+                                    {{ $writer }}
+                                @else
+                                    {{ $writer }},
+                                @endif
+                                
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="specs">
+                    <h2>
+                        Specs
+                    </h2>
+
+                    <div class="series">
+                        <div class="series-left">
+                            Series:
+                        </div>
+                        <div class="series-right">
+                            {{ $elem['series'] }}
+                        </div>
+                    </div>
+                    <div class="details-price">
+                        <div class="details-price-left">
+                            U.S. Price:
+                        </div>
+                        <div class="details-price-right">
+                            {{ $elem['price'] }}
+                        </div>
+                    </div>
+                    <div class="sale-date">
+                        <div class="sale-date-left">
+                            On Sale Date
+                        </div>
+                        <div class="sale-date-right">
+                            {{ $elem['sale_date'] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

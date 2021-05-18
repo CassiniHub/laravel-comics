@@ -403,3 +403,105 @@ footer .secondary-footer .secondary-footer-wrapper .secondary-footer-social ul l
   font-size: 1.5rem;
 }
 
+.details {
+  background-color: #F6F6F6;
+  padding: 50px;
+  border-top: 1px solid lightgray;
+}
+
+.details .details-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.details .details-wrapper .talent {
+  width: 50%;
+}
+
+.details .details-wrapper .talent h2 {
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .talent .art-by {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .talent .art-by .art-by-left {
+  width: 20%;
+}
+
+.details .details-wrapper .talent .art-by .art-by-right {
+  width: 80%;
+}
+
+.details .details-wrapper .talent .written-by {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .talent .written-by .written-by-left {
+  width: 20%;
+}
+
+.details .details-wrapper .talent .written-by .written-by-right {
+  width: 80%;
+}
+
+.details .details-wrapper .specs {
+  width: 50%;
+}
+
+.details .details-wrapper .specs h2 {
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .specs .series {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .specs .series .series-left {
+  width: 20%;
+}
+
+.details .details-wrapper .specs .series .series-right {
+  width: 80%;
+}
+
+.details .details-wrapper .specs .details-price {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .specs .details-price .details-price-left {
+  width: 20%;
+}
+
+.details .details-wrapper .specs .details-price .details-price-right {
+  width: 80%;
+}
+
+.details .details-wrapper .specs .sale-date {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.details .details-wrapper .specs .sale-date .sale-date-left {
+  width: 20%;
+}
+
+.details .details-wrapper .specs .sale-date .sale-date-right {
+  width: 80%;
+}
+
