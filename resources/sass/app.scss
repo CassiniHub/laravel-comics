@@ -283,6 +283,7 @@ footer {
     
                         .footer-col {
                             margin-right: 50px;
+                            
                             h3 {
                                 padding-bottom: 15px;
                                 color: $secondary-color;
@@ -382,7 +383,7 @@ footer {
 // ELEMENT PAGES
 // GENERAL
 .elem-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -404,21 +405,65 @@ footer {
 
 // PRODUCT
 .product {
+    padding: 60px 0;
+
     .product-wrapper {
         display: flex;
         flex-flow: row nowrap;
-        
-        .product-description {
+
+        .product-description {
             flex: 1 1 80%;
 
+            margin-right: 40px;
+
             h2 {
-                font-size: 40px;
+                margin-bottom: 20px;
+                font-size: 2.5rem;
             }
 
             .availability-bar {
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-between;
+                width: 100%;
+
+                margin-bottom: 15px;
+                
+                background-color: #55BA59;
+                border-bottom: 1px solid black;
+
+                .availability-bar-left {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+
+                    width: 80%;
+                    padding: 20px 20px;
+
+                    
+                }
+
+                .availability-bar-right {
+                    display: flex;
+                    align-items: center;
+
+                    width: 20%;
+                    padding: 0 20px;
+
+                    border-left: 1px solid black;
+                }
+            }
+
+            .description {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                color: gray;
+            }
+        }
+
+        .adv {
+            text-align: right;
+
+            h3 {
+                font-size: 1.5rem;
             }
         }
     }

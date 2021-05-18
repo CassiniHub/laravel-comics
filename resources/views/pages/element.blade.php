@@ -14,27 +14,32 @@
             <div class="product-wrapper">
                 <div class="product-description">
                     <h2>
-                        {{ $elem['title'] }}
+                        {{$elem['title']}}
                     </h2>
+
                     <div class="availability-bar">
                         <div class="availability-bar-left">
-                            <span>
-                                U.S. Price: {{ $elem['price'] }}
+                            <span class="price">
+                                U.S. Price : {{ $elem['price'] }}
                             </span>
 
-                            <span>
+                            <span >
                                 AVAILABLE
                             </span>
                         </div>
                         <div class="availability-bar-right">
-
+                            <span>Check Availability</span>
                         </div>
                     </div>
+
+                    <p class="description">
+                        {{ $elem['description'] }}
+                    </p>
                 </div>
 
                 <div class="adv">
                     <h3>
-                        Advertisement
+                        ADVERTISEMENT
                     </h3>
                     <img src="{{ asset('storage/assets/images/adv.jpg') }}" alt="">
                 </div>

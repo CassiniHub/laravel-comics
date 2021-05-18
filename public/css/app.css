@@ -330,7 +330,7 @@ footer .secondary-footer .secondary-footer-wrapper .secondary-footer-social ul l
 }
 
 .elem-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -346,6 +346,10 @@ footer .secondary-footer .secondary-footer-wrapper .secondary-footer-social ul l
   border: 1px solid white;
 }
 
+.product {
+  padding: 60px 0;
+}
+
 .product .product-wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -353,15 +357,49 @@ footer .secondary-footer .secondary-footer-wrapper .secondary-footer-social ul l
 
 .product .product-wrapper .product-description {
   flex: 1 1 80%;
+  margin-right: 40px;
 }
 
-.product .product-wrapper .product-description  h2 {
-  font-size: 40px;
+.product .product-wrapper .product-description h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
-.product .product-wrapper .product-description  .availability-bar {
+.product .product-wrapper .product-description .availability-bar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #55BA59;
+  border-bottom: 1px solid black;
+}
+
+.product .product-wrapper .product-description .availability-bar .availability-bar-left {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  width: 80%;
+  padding: 20px 20px;
+}
+
+.product .product-wrapper .product-description .availability-bar .availability-bar-right {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 0 20px;
+  border-left: 1px solid black;
+}
+
+.product .product-wrapper .product-description .description {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: gray;
+}
+
+.product .product-wrapper .adv {
+  text-align: right;
+}
+
+.product .product-wrapper .adv h3 {
+  font-size: 1.5rem;
 }
 
