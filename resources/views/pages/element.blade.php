@@ -16,6 +16,20 @@
                     <h2>
                         {{ $elem['title'] }}
                     </h2>
+                    <div class="availability-bar">
+                        <div class="availability-bar-left">
+                            <span>
+                                U.S. Price: {{ $elem['price'] }}
+                            </span>
+
+                            <span>
+                                AVAILABLE
+                            </span>
+                        </div>
+                        <div class="availability-bar-right">
+
+                        </div>
+                    </div>
                 </div>
 
                 <div class="adv">
