@@ -329,3 +329,33 @@ footer .secondary-footer .secondary-footer-wrapper .secondary-footer-social ul l
   margin: 0 10px;
 }
 
+.elem-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.blue-bar {
+  position: relative;
+  height: 100px;
+  background-color: #0282F9;
+}
+
+.blue-bar img {
+  position: absolute;
+  bottom: 20%;
+  border: 1px solid white;
+}
+
+.product .product-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.product .product-wrapper .product-description {
+  flex: 1 1 80%;
+}
+
+.product .product-wrapper .product-description  h2 {
+  font-size: 1.8rem;
+}
+

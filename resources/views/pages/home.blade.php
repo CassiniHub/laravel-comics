@@ -1,13 +1,6 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    {{-- JUMBOTRON --}}
-    <section class="jumbotron">
-        <div class="jumbotron-bg">
-
-        </div>
-    </section>
-
     {{-- CURRENT SERIES --}}
     <section class="current-series">
         <div class="container">
@@ -19,8 +12,10 @@
                 <ul>
                     @foreach ($data as $item)
                         <li>
-                            <img src="{{ $item['thumb'] }}" alt="">
-                            <span>{{ $item['title']}}</span>
+                            <a href="{{ route('elem', $loop->index )}}">
+                                <img src="{{ $item['thumb'] }}" alt="">
+                                <span>{{ $item['title'] }}</span>
+                            </a>
                         </li>
                     @endforeach
                 </ul>
